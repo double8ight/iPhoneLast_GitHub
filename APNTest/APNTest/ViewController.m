@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-#define FRIEND_LIST @"http://192.168.211.166:3000/friend_list.json"
-#define PROVIDER_ADDRESS @"http://192.168.211.166:3000"
+#define FRIEND_LIST @"http://192.168.2.1:3000/?name=all"
+#define PROVIDER_ADDRESS @"http://192.168.2.1:3000"
 
 @interface ViewController ()
 {

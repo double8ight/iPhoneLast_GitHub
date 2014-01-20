@@ -26,8 +26,11 @@
     AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
     
     NSString *badge = [apsInfo objectForKey:@"badge"];
-    NSLog(@"Received Push Alert : %@", badge);
+    NSLog(@"Received Push badge : %@", badge);
     application.applicationIconBadgeNumber = [[apsInfo objectForKey:@"badge"]integerValue];
+    
+    UIAlertView *alert2 = [[UIAlertView alloc]initWithTitle:@"알림 발송" message:alert delegate:nil cancelButtonTitle:@"취소" otherButtonTitles:@"확인", nil];
+    [alert2 show];
     
 }
 
