@@ -82,7 +82,7 @@
 {
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"알림 발송" message:@"알림 메시지" delegate:self cancelButtonTitle:@"취소" otherButtonTitles:@"확인", nil];
     alert.alertViewStyle = UIAlertViewStylePlainTextInput;
-    selectedRow = indexPath.row;
+    selectedRow = (int)indexPath.row;
     [alert show];
 }
 

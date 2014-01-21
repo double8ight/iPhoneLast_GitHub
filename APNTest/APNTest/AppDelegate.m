@@ -10,9 +10,12 @@
 #import <AudioToolbox/AudioToolbox.h>
 
 @implementation AppDelegate
+{
+    NSMutableDictionary *_messages;
+}
 
 
-// 앱이 실행중에 푸시가 오는 경우
+// 앱이 실행중이거나 아닐 때 푸시를 다 받는다.
 -(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
 {
     NSLog(@"remote notification : %@", [userInfo description]);
